@@ -5,7 +5,9 @@ public class KeyBoard implements KeyListener{
     private boolean aPressed, bPressed, cPressed, dPressed, ePressed, fPressed, gPressed, hPressed,
     iPressed, jPressed, kPressed, lPressed, mPressed, nPressed, oPressed, pPressed, qPressed,
     rPressed, sPressed, tPressed, uPressed, vPressed, wPressed, xPressed, yPressed, zPressed,
-    upPressed, downPressed, rightPressed, leftPressed, spacePressed, shiftPressed;
+    upPressed, downPressed, rightPressed, leftPressed, spacePressed, shiftPressed, number0Pressed,
+    number1Pressed, number2Pressed, number3Pressed, number4Pressed, number5Pressed, number6Pressed,
+    number7Pressed, number8Pressed, number9Pressed;
     @Override
     public void keyTyped(KeyEvent e){}
     @Override
@@ -110,6 +112,36 @@ public class KeyBoard implements KeyListener{
                 break;
             case KeyEvent.VK_Z:
                 zPressed = setTo;
+                break;
+            case KeyEvent.VK_0:
+                number0Pressed = setTo;
+                break;
+            case KeyEvent.VK_1:
+                number1Pressed = setTo;
+                break;
+            case KeyEvent.VK_2:
+                number2Pressed = setTo;
+                break;
+            case KeyEvent.VK_3:
+                number3Pressed = setTo;
+                break;
+            case KeyEvent.VK_4:
+                number4Pressed = setTo;
+                break;
+            case KeyEvent.VK_5:
+                number5Pressed = setTo;
+                break;
+            case KeyEvent.VK_6:
+                number6Pressed = setTo;
+                break;
+            case KeyEvent.VK_7:
+                number7Pressed = setTo;
+                break;
+            case KeyEvent.VK_8:
+                number8Pressed = setTo;
+                break;
+            case KeyEvent.VK_9:
+                number9Pressed = setTo;
                 break;
         }
     }
@@ -233,5 +265,35 @@ public class KeyBoard implements KeyListener{
     
     public boolean zPressed(){
         return this.zPressed;
+    }
+    public boolean number0Pressed(){
+        return this.number0Pressed;
+    }
+    public boolean number1Pressed(){
+        return this.number1Pressed;
+    }
+    public boolean number2Pressed(){
+        return this.number2Pressed;
+    }
+    public boolean number3Pressed(){
+        return this.number3Pressed;
+    }
+    public boolean number4Pressed(){
+        return this.number4Pressed;
+    }
+    public boolean number5Pressed(){
+        return this.number5Pressed;
+    }
+    public boolean number6Pressed(){
+        return this.number6Pressed;
+    }
+    public boolean number7Pressed(){
+        return this.number7Pressed;
+    }
+    public boolean number8Pressed(){
+        return this.number8Pressed;
+    }
+    public boolean number9Pressed(){
+        return this.number9Pressed;
     }
 }
