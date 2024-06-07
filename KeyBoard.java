@@ -20,16 +20,16 @@ public class KeyBoard implements KeyListener{
     }
     private void setKeys(KeyEvent e, boolean setTo){
         switch(e.getKeyCode()){
-            case KeyEvent.VK_KP_UP:
+            case KeyEvent.VK_UP:
                 upPressed = setTo;
                 break;
-            case KeyEvent.VK_KP_DOWN:
+            case KeyEvent.VK_DOWN:
                 downPressed = setTo;
                 break;
-            case KeyEvent.VK_KP_RIGHT:
+            case KeyEvent.VK_RIGHT:
                 rightPressed = setTo;
                 break;
-            case KeyEvent.VK_KP_LEFT:
+            case KeyEvent.VK_LEFT:
                 leftPressed = setTo;
                 break;
             case KeyEvent.VK_SHIFT:
